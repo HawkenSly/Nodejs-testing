@@ -3,6 +3,8 @@ const EventEmitter = require('events');
 const celebrity = new EventEmitter();
 
 // Becomes an observer (listener) for subject "celebrity"
+// First argument is the event string, second argument is a function. In this case, we're using an arrow function to automatically
+//run the following code.
 celebrity.on('race win', () => {
     console.log('Congratulations! You are the best!');
 });
@@ -12,6 +14,13 @@ celebrity.on('race win', () => {
 celebrity.on('race win', () => {
     console.log('Boo! I should have won!');
 });
+
+
+
+process.on('exit', (code) => {
+    console.log('Process exit event with code: ', code);
+})
+
 
 //Emits event to observers/listeners
 celebrity.emit('race win');
