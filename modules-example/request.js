@@ -1,3 +1,5 @@
+let blah = 'I do not need this'
+
 function encrypt(data) {
     return 'encrypted data';
 }
@@ -8,7 +10,7 @@ function send(url, data) {
 }
 
 module.exports = {
-    send,
+    send, blah,
 }
 
-console.log(module);
+
