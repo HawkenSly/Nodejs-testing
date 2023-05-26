@@ -8,8 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "csv-parse": "^5.3.10"
-  }
+  "license": "ISC"
 }
